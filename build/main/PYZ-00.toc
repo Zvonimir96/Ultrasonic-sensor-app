@@ -1,4 +1,4 @@
-('C:\\Users\\zvoni\\Desktop\\Dejo\\build\\main\\PYZ-00.pyz',
+('C:\\Users\\zvoni\\Desktop\\Ultrazvucni senzor\\build\\main\\PYZ-00.pyz',
  [('PyQt5',
    'C:\\Users\\zvoni\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\site-packages\\PyQt5\\__init__.py',
    'PYMODULE'),
