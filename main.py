@@ -54,6 +54,7 @@ class Worker(QObject):
                     try:
                         if str(port).index("STMicroelectronics STLink Virtual COM Port"):
                             STM_port = port.device
+                            break
                     except Exception:
                         STM_port = ''
 
