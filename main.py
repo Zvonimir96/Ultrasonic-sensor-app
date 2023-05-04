@@ -6,8 +6,6 @@ from PyQt5.QtCore import QObject, pyqtSignal, QThread
 import sys
 import serial.tools.list_ports
 
-from serial import SerialException
-
 v_z = 340.3
 broj_decimala = 4
 
@@ -50,14 +48,18 @@ class Worker(QObject):
 
             while (running):
                 ports = serial.tools.list_ports.comports()
-                serialInst = serial.Serial()
 
                 STM_port = ''
                 for port in ports:
-                    if (str(port).index("STMicroelectronics STLink Virtual COM Port")):
-                        STM_port = port.device
+                    try:
+                        if str(port).index("STMicroelectronics STLink Virtual COM Port"):
+                            STM_port = port.device
+                    except Exception:
+                        STM_port = ''
 
                 try:
+                    serialInst = serial.Serial()
+
                     serialInst.baudrate = 9600
                     serialInst.port = STM_port
                     serialInst.open()
@@ -81,8 +83,10 @@ class Worker(QObject):
                                 self.set_data.emit(float(data[1]), int(data[0]))
 
 
-                        except SerialException:
-                            break
+
+                        except Exception:
+                            self.connection_error.emit()
+                            error = True
 
 
 class Ui_MainWindow(object):
