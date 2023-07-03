@@ -31,7 +31,7 @@
     <property name="title">
      <string>Udaljenost</string>
     </property>
-    <widget class="QLineEdit" name="text_obje_korekcije">
+    <widget class="QLineEdit" name="text_both_corrections">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -41,7 +41,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QLineEdit" name="text_temperaturna">
+    <widget class="QLineEdit" name="text_temperature">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -115,7 +115,7 @@
       <string>S geometrijskom</string>
      </property>
     </widget>
-    <widget class="QLineEdit" name="text_bez_korekcije">
+    <widget class="QLineEdit" name="text_without_corrcetion">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -161,7 +161,7 @@
     <property name="title">
      <string>Brzina zvuka</string>
     </property>
-    <widget class="QLineEdit" name="text_trenutna">
+    <widget class="QLineEdit" name="text_vz_current">
      <property name="geometry">
       <rect>
        <x>150</x>
@@ -199,7 +199,7 @@
       <string>Vz - 15.5°C</string>
      </property>
     </widget>
-    <widget class="QLabel" name="label_vz_trenutna">
+    <widget class="QLabel" name="label_vz_current">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -235,7 +235,7 @@
     <property name="title">
      <string>T i R razmak</string>
     </property>
-    <widget class="QLineEdit" name="text_udaljenost">
+    <widget class="QLineEdit" name="text_distance">
      <property name="geometry">
       <rect>
        <x>199</x>
@@ -245,7 +245,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QSlider" name="slider_udaljenost">
+    <widget class="QSlider" name="slider_distance">
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -277,7 +277,7 @@
      </font>
     </property>
     <property name="title">
-     <string>Temperatura</string>
+     <string>temperature</string>
     </property>
     <widget class="QLineEdit" name="text_bmp">
      <property name="geometry">
