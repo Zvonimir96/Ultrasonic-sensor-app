@@ -4,7 +4,7 @@ Documentation for STM32 microcontroller can be found at the [link](https://githu
 To run the application, locate the executable file under the path Senzor app/build/main/main.exe
 
 <p align="center">
-  <img src="" width="70%">
+  <img src="https://github.com/Zvonimir96/Ultrasonic-sensor-app/assets/46999608/6f94bdb5-1308-40f8-bb3b-d1f207b55cdf" width="70%">
 </p>
 
 # Issues
